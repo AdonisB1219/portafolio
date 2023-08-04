@@ -39,8 +39,6 @@ document.getElementById('form')
 
 
 //Validar datos de contacto
-
-
 function validarDatos(){
 
   inputs.forEach(elemento => {
@@ -89,4 +87,27 @@ let items = document.querySelectorAll('.carousel .carousel-item')
         el.appendChild(cloneChild.children[0])
         next = next.nextElementSibling
     }
+});
+
+
+//Animación navbar
+const menuLinks = document.querySelectorAll('a[href^="#"');
+const observer = new IntersectionObserver((entries)=>{
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute(`id`);
+    const menulink = document.querySelector(`a[href="#${id}"`);
+
+    if (entry.isIntersecting){
+      document.querySelector("a.active").classList.remove("active");
+      menulink.classList.add("active");
+    }
+  });
+}, {rootMargin: "-50% 0px -50% 0px"});
+
+menuLinks.forEach(menuLink => {
+  const hash = menuLink.getAttribute("href");
+  const target = document.querySelector(hash);
+  if(target){
+    observer.observe(target);
+  }
 })

@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -15,27 +18,28 @@
 
 <body>
 
-
+  <header>
   <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" aria-label="Fourth navbar example">
     <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+      <a class="navbar-brand" href="#inicio">Navbar scroll</a>
+      <button id="boton-navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
         aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item px-4">
-            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+          <li class="nav-item px-4" style="cursor: pointer;">
+            <a class="nav-link active" aria-current="page" href="#inicio" id="inicio-nav">Inicio</a>
           </li>
           <li class="nav-item px-4">
-            <a class="nav-link" href="#proyectos">Proyectos</a>
+            <a class="nav-link" id="proyectos-nav" href="#proyectos">Proyectos</a>
           </li>
           <li class="nav-item px-4">
-            <a class="nav-link" href="#habilidades">Habilidades</a>
+            <a class="nav-link" id="habilidades-nav" href="#habilidades">Habilidades</a>
           </li>
           <li class="nav-item px-4">
-            <a class="nav-link" href="#contacto">Contacto</a>
+            <a class="nav-link" id="contacto-nav" href="#contacto">Contacto</a>
           </li>
         </ul>
         <div class="text-end px-4">
@@ -43,13 +47,14 @@
         </div>
       </div>
     </div>
+    <span class="indicador"></span>
   </nav>
 
   </header>
 
 
   <main class="fluid-container">
-    <section class="inicio" id="inicio">
+    <section class="inicio seccion" id="inicio">
       <div class="cont-titulo">
         <h1 class="titulo">Desarrollador</h1>
         <h1 class="titulo">Full Stack</h1>
@@ -68,13 +73,10 @@
           </div>
         </div>
       </div>
-
-
-
     </section>
 
-    <section class="proyectos m-4" id="">
-      <h2 id="proyectos">Proyectos</h2>
+    <section class="proyectos seccion" id="proyectos">
+      <h2 id="proyectos" class="titulo-seccion">Proyectos</h2>
       <div class="subrayado-titulo"></div>
       <div class="container">
         <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1">
@@ -101,8 +103,8 @@
 
     </section>
 
-    <section class="habilidades" id="habilidades">
-      <h2>Habilidades</h2>
+    <section class="habilidades seccion" id="habilidades">
+      <h2 class="titulo-seccion">Habilidades</h2>
       <div class="subrayado-titulo"></div>
 
       <div class="grid-habilidades">
@@ -199,8 +201,8 @@
 
     </section>
 
-    <section class="contacto" id="contacto">
-      <h2>Contacto</h2>
+    <section class="contacto seccion" id="contacto">
+      <h2 class="titulo-seccion">Contacto</h2>
       <div class="subrayado-titulo"></div>
 
       <div class="flex-contacto mt-4">
@@ -285,6 +287,7 @@
     </div>
     
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>

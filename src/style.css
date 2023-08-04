@@ -1,5 +1,17 @@
+html{
+  scroll-behavior: smooth;
+}
+
 *{
     font-family: 'Anybody', cursive;
+}
+
+.titulo-seccion{
+  margin-top: 50px;
+}
+
+section{
+  scroll-margin-top: 80px;
 }
 
 .inicio {
