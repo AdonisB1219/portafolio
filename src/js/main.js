@@ -98,11 +98,15 @@ const observer = new IntersectionObserver((entries)=>{
     const menulink = document.querySelector(`a[href="#${id}"`);
 
     if (entry.isIntersecting){
-      document.querySelector("a.active").classList.remove("active");
       menulink.classList.add("active");
+    } else{
+      menulink.classList.remove("active");
+
     }
   });
-}, {rootMargin: "-50% 0px -50% 0px"});
+}, {rootMargin: "40px 0px -40% 0px",
+
+threshold:0.4,});
 
 menuLinks.forEach(menuLink => {
   const hash = menuLink.getAttribute("href");
@@ -110,4 +114,33 @@ menuLinks.forEach(menuLink => {
   if(target){
     observer.observe(target);
   }
-})
+});
+
+
+
+//Animación proyectos
+
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
+
+
+const cargarImagen = (entradas, observador) => {
+  console.log(entradas);
+  console.log(img1.style.height)
+  entradas.forEach((entrada) => {
+    if(entrada.isIntersecting){
+      entrada.target.classList.add("img-proy-visible");
+     } else{
+      entrada.target.classList.remove("img-proy-visible");
+     }
+  });
+};
+
+const observador = new IntersectionObserver(cargarImagen, {
+  root:null,
+  rootMargin:'0px 0px 0px 0px',
+  threshold:0.6,
+});
+
+observador.observe(img1);
+observador.observe(img2);

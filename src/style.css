@@ -11,7 +11,7 @@ html{
 }
 
 section{
-  scroll-margin-top: 80px;
+  scroll-margin-top: 130px;
 }
 
 .inicio {
@@ -26,6 +26,18 @@ section{
     row-gap: 200px;
   }
 
+
+  .contacto{
+    min-height: 80vh;
+  }
+
+  .habilidades{
+    min-height: 100vh;
+  }
+
+  .proyectos{
+    min-height: 100vh;
+  }
   .titulo{
     animation: mover-izq-abajo 2s;
     animation-fill-mode: forwards;
@@ -108,13 +120,6 @@ margin-bottom: 20px;
 
  }
 
- .grid-habilidades {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: (auto);
-}
-
 .carrusel{
   grid-column: 1;
 }
@@ -142,6 +147,28 @@ margin-bottom: 20px;
 .wrong-text{
   color: red;
   font-size: 0.5rem;
+}
+
+
+.img-proyectos{
+  opacity: 0;
+  transition: .9s ease-in-out all;
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.izquierda{
+  transform: translateX(-100px);
+}
+
+.derecha{
+  transform: translateX(100px);
+}
+
+.img-proy-visible{
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @keyframes fadeIn {
@@ -180,6 +207,9 @@ margin-bottom: 20px;
         font-size: 40px;
         width: 80%;
     }
+
+
+
 
     .subrayado-titulo{
       height: 8px;
@@ -231,6 +261,7 @@ margin-bottom: 20px;
         font-size: 40px;
         width: 80%;
     }
+
 
     #correo{
       font-size: 13px;

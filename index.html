@@ -4,52 +4,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon-32x32.png">
   <title>Adonis Becerra</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anybody&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anybody:wght@800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./src/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
 <body>
-
   <header>
-  <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" aria-label="Fourth navbar example">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#inicio">Navbar scroll</a>
-      <button id="boton-navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
-        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Fourth navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#inicio"><img src="./src/img/Frame 3 (1).png" style="height: 50px;"></a>
+        <button id="boton-navbar" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample04">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item px-4" style="cursor: pointer;">
-            <a class="nav-link active" aria-current="page" href="#inicio" id="inicio-nav">Inicio</a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" id="proyectos-nav" href="#proyectos">Proyectos</a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" id="habilidades-nav" href="#habilidades">Habilidades</a>
-          </li>
-          <li class="nav-item px-4">
-            <a class="nav-link" id="contacto-nav" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-        <div class="text-end px-4">
-          <button type="button" class="btn btn-light px-4">Descargar CV</button>
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item px-4">
+              <a class="nav-link active" aria-current="page" href="#inicio" id="inicio-nav">Inicio</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" id="proyectos-nav" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" id="habilidades-nav" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item px-4">
+              <a class="nav-link" id="contacto-nav" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+          <div class="text-end px-4">
+            <button type="button" class="btn btn-light px-4">Descargar CV</button>
+          </div>
         </div>
       </div>
-    </div>
-    <span class="indicador"></span>
-  </nav>
-
+      <span class="indicador"></span>
+    </nav>
   </header>
 
 
@@ -79,27 +79,25 @@
       <h2 id="proyectos" class="titulo-seccion">Proyectos</h2>
       <div class="subrayado-titulo"></div>
       <div class="container">
-        <div class="row row-cols-md-2 row-cols-lg-3 row-cols-1">
+        <div class="row row-cols-md-2 row-cols-1 g-4 mb-2">
+          
           <div class="col mb-4">
-            <div class="card">
-              <img src="./src/img/CCSF.jpg" class="card-img-top" alt="Centro comunitario santa fe">
-            </div>
+              <img class="img-proyectos izquierda" src="./src/img/CCSF.jpg" alt="Centro comunitario santa fe" id="img1">
           </div>
           <div class="col mb-4">
-            <div class="card">
-              <div class="card-body">
-                This is some text within a card body.
-              </div>
-            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur quia inventore? Amet quaerat laboriosam quam voluptatum ratione, et eos sed, officia impedit officiis aperiam perferendis dolores, iure cumque porro?</p>
+          </div>
+          
+          <div class="col mb-4 texto-final-p">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur quia inventore? Amet quaerat laboriosam quam voluptatum ratione, et eos sed, officia impedit officiis aperiam perferendis dolores, iure cumque porro?</p>
           </div>
           <div class="col mb-4">
-            <div class="card">
-              <div class="card-body">
-                This is some text within a card body.
-              </div>
-            </div>
-          </div>
+            <img class="img-proyectos derecha" src="./src/img/CCSF.jpg" alt="Centro comunitario santa fe" id="img2">
         </div>
+      </div>
+
+        </div>
+      </div>
 
     </section>
 
@@ -107,92 +105,107 @@
       <h2 class="titulo-seccion">Habilidades</h2>
       <div class="subrayado-titulo"></div>
 
-      <div class="grid-habilidades">
-
+      <div class="container">
+<div class="row row-cols-1 row-cols-lg-2">
+  <div class="col">
         <div class="carrusel">
           <div class="container text-center my-3">
             <div class="row mx-auto my-auto justify-content-center">
-                <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item active">
-                            <div class="col-md-4">
-                                    <div class="card-img">
-                                        <img src="./src/img/bootstrap.png" class="img-carrusel">
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                    <div class="card-img">
-                                      <img src="./src/img/css.png" class="img-carrusel">
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                    <div class="card-img">
-                                      <img src="./src/img/figma.png" class="img-carrusel">
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                    <div class="card-img">
-                                      <img src="./src/img/github.png" class="img-carrusel">
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                    <div class="card-img">
-                                      <img src="./src/img/html.png" class="img-carrusel">
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-4">
-                                    <div class="card-img">
-                                      <img src="./src/img/java.png" class="img-carrusel">
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                          <div class="col-md-4">
-                                  <div class="card-img">
-                                    <img src="./src/img/JS.png" class="img-carrusel">
-                                  </div>
-                          </div>
+              <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-md-4">
+                      <div class="card-img">
+                        <img src="./src/img/bootstrap.png" class="img-carrusel">
                       </div>
-                      <div class="carousel-item">
-                        <div class="col-md-4">
-                                <div class="card-img">
-                                  <img src="./src/img/python.png" class="img-carrusel">
-                                </div>
-                        </div>
                     </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card-img">
+                        <img src="./src/img/css.png" class="img-carrusel">
+                      </div>
                     </div>
-                    <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card-img">
+                        <img src="./src/img/figma.png" class="img-carrusel">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card-img">
+                        <img src="./src/img/github.png" class="img-carrusel">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card-img">
+                        <img src="./src/img/html.png" class="img-carrusel">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card-img">
+                        <img src="./src/img/java.png" class="img-carrusel">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card-img">
+                        <img src="./src/img/JS.png" class="img-carrusel">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-md-4">
+                      <div class="card-img">
+                        <img src="./src/img/python.png" class="img-carrusel">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>		
+                <a class="carousel-control-prev bg-transparent w-aut" href="#recipeCarousel" role="button"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next bg-transparent w-aut" href="#recipeCarousel" role="button"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        </div>
-
+      </div>
+      <div class="col">
         <div class="blandas">
           <ul>
-            <li><p>Trabajo en equipo</p></li>
-            <li><p>Liderazgo</p></li>
-            <li><p>Creatividad</p></li>
-            <li><p>Adaptabilidad</p></li>
-            <li><p>Iniciativa</p></li>
+            <li>
+              <p>Trabajo en equipo</p>
+            </li>
+            <li>
+              <p>Liderazgo</p>
+            </li>
+            <li>
+              <p>Creatividad</p>
+            </li>
+            <li>
+              <p>Adaptabilidad</p>
+            </li>
+            <li>
+              <p>Iniciativa</p>
+            </li>
           </ul>
 
         </div>
-  
+      </div>
+      </div>
       </div>
 
 
@@ -226,11 +239,14 @@
             </tr>
             <tr>
               <td>
-                <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><img src="./src/img/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><img src="./src/img/linkedin.png"
+                    alt="linkedin"></a>
               </td>
               <td>
-                <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><p>Adonis Becerra Morales</p></a>
-                
+                <a href="https://www.linkedin.com/in/adonis-becerra-morales-/">
+                  <p>Adonis Becerra Morales</p>
+                </a>
+
               </td>
             </tr>
             <tr>
@@ -238,36 +254,38 @@
                 <a href="https://github.com/AdonisB1219"><img src="./src/img/github.png" alt="github"></a>
               </td>
               <td>
-                <a href="https://github.com/AdonisB1219"><p>AdonisB1219</p></a>
-                
+                <a href="https://github.com/AdonisB1219">
+                  <p>AdonisB1219</p>
+                </a>
+
               </td>
             </tr>
           </table>
-          
+
         </div>
         <form id="form">
-        <div class="formulario-contacto col-lg-6">
-          <div class="col">
-            <div class="form-floating mb-3 field">
-              <input type="text" class="form-control" id="name" placeholder="Nombre" name="name">
-              <label for="name">Nombre</label>
-            </div>
-          </div>
-          <div class="col">
-            <div class="form-floating mb-3 field">
-              <input type="email" class="form-control" id="email" placeholder="Email" name="email">
-              <label for="email">Email</label>
+          <div class="formulario-contacto col-lg-6">
+            <div class="col">
+              <div class="form-floating mb-3 field">
+                <input type="text" class="form-control" id="name" placeholder="Nombre" name="name">
+                <label for="name">Nombre</label>
+              </div>
             </div>
             <div class="col">
               <div class="form-floating mb-3 field">
-                <input type="texto" class="form-control" id="message" placeholder="Mensaje" name="message">
-                <label for="message">Mensaje</label>
-                <input type="submit" id="button" value="Enviar Email" >
+                <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                <label for="email">Email</label>
+              </div>
+              <div class="col">
+                <div class="form-floating mb-3 field">
+                  <input type="texto" class="form-control" id="message" placeholder="Mensaje" name="message">
+                  <label for="message">Mensaje</label>
+                  <input type="submit" id="button" value="Enviar Email">
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
       </div>
 
     </section>
@@ -276,24 +294,25 @@
     <div class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top ">
       <p class="col-md-4 mb-0 text-body-secondary text-center">© 2023 Adonis Becerra</p>
 
-      <div class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none m-4">
-        <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><img src="./src/img/linkedin.png" alt="linkedin"></a>
+      <div
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none m-4">
+        <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><img src="./src/img/linkedin.png"
+            alt="linkedin"></a>
         <a href="https://github.com/AdonisB1219"><img src="./src/img/github.png" alt="github"></a>
       </div>
 
-    <div class="text-end">
-      <a href="#inicio"><img src="./src/img/flechaArriba.png" alt="flecha arriba"></a>
+      <div class="text-end">
+        <a href="#inicio"><img src="./src/img/flechaArriba.png" alt="flecha arriba"></a>
+      </div>
     </div>
-    </div>
-    
+
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
   <script type="text/javascript">
     emailjs.init('a6EtC--2fowK_8GRa')
   </script>
