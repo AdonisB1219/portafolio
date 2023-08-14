@@ -25,7 +25,7 @@ document.getElementById('form')
  
     emailjs.sendForm(serviceID, templateID, this)
      .then(() => {
-       btn.value = 'Mensaje enviado';
+       btn.value = 'Enviar email';
        Swal.fire({
         position: "top",
         text: 'Mensaje enviado exitosamente',

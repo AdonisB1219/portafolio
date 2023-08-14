@@ -32,11 +32,24 @@ section{
 
 
   .contacto{
-    min-height: 80vh;
+    min-height: 70vh;
+  }
+
+  #descargar-cv{
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 253);
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+  }
+
+  #descargar-cv:hover{
+    background-color: #2906FF;
+    color: white;
   }
 
   .habilidades{
-    min-height: 100vh;
+    min-height: 80vh;
   }
 
   .proyectos{
