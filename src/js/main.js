@@ -1,4 +1,4 @@
-const btn = document.getElementById('button');
+const btn = document.getElementById('button-email');
 const nombre = document.getElementById('name');
 const correo = document.getElementById('email');
 const mensaje = document.getElementById('message');
@@ -6,7 +6,6 @@ const inputs = [nombre, correo, mensaje];
 
 const regexNombre = /^[a-zA-Z\s+]{5,}$/;
 const regexCorreo = /^[^@\t\n\r]{5,}@[^@\t\n\r]{3,}.[^@\t\n\r]{2,}/;
-const regexMensaje = /^[\w\s]{10,}$/;
 
 
 
@@ -19,17 +18,32 @@ document.getElementById('form')
    mensaje.value = mensaje.value.trim();
 
    if(validarDatos()){
-    btn.value = 'Sending...';
+    btn.value = 'Enviando...';
 
     const serviceID = 'default_service';
     const templateID = 'template_9wk63eg';
  
     emailjs.sendForm(serviceID, templateID, this)
      .then(() => {
-       btn.value = 'Send Email';
-       alert('Sent!');
+       btn.value = 'Mensaje enviado';
+       Swal.fire({
+        position: "top",
+        text: 'Mensaje enviado exitosamente',
+        width: 600,
+        padding: '3em',
+        color: '#5252fcd9',
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("https://mantenimiento.pe/wp-content/uploads/2020/06/mensajeneviado.gif")
+          no-repeat
+          bottom
+        `
+      });
+      nombre.value = "";
+      correo.value ="";
+      mensaje.value = "";
      }, (err) => {
-       btn.value = 'Send Email';
+       btn.value = 'Enviar email';
        alert(JSON.stringify(err));
      });
    }
@@ -62,7 +76,7 @@ function validarDatos(){
     correo.insertAdjacentHTML("afterend", `<p class="wrong-text">Correo inválido</p>`);
   }
 
-  if (!regexMensaje.test(mensaje.value)){
+  if (mensaje.value.length < 10){
     valido = false;
     mensaje.style.border = "solid thin red";
     mensaje.insertAdjacentHTML("afterend", `<p class="wrong-text">Mensaje inválido</p>`);
@@ -76,7 +90,7 @@ function validarDatos(){
 let items = document.querySelectorAll('.carousel .carousel-item')
 
 		items.forEach((el) => {
-			const minPerSlide = 3
+			const minPerSlide = 4;
 			let next = el.nextElementSibling
 			for (var i=1; i<minPerSlide; i++) {
 				if (!next) {
