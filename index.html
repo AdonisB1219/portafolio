@@ -44,7 +44,8 @@
             </li>
           </ul>
           <div class="text-end px-4">
-            <a id="descargar-cv" href="https://drive.google.com/uc?export=download&id=1RuUKNNhQPPHkIo5ohZQY9vdJs1hqQh1o" download="CV_Adonis.pdf">Descargar CV</a>
+            <a id="descargar-cv" href="https://drive.google.com/uc?export=download&id=1RuUKNNhQPPHkIo5ohZQY9vdJs1hqQh1o"
+              download="CV_Adonis.pdf">Descargar CV</a>
           </div>
         </div>
       </div>
@@ -79,23 +80,46 @@
       <h2 id="proyectos" class="titulo-seccion">Proyectos</h2>
       <div class="subrayado-titulo"></div>
       <div class="container">
-        <div class="row row-cols-md-2 row-cols-1 g-4 mb-2">
+        <div class="row row-cols-md-2 row-cols-1 g-4 mb-2 proyectos-flex">
 
           <div class="col mb-4">
-            <img class="img-proyectos izquierda" src="./src/img/CCSF.jpg" alt="Centro comunitario santa fe" id="img1">
+            <a href="https://adonisb1219.github.io/CCSF/"><img class="img-proyectos izquierda" src="./src/img/CCSF.jpg" alt="Centro comunitario santa fe" id="img1"></a>
           </div>
           <div class="col mb-4">
             <p class="proyectos-p">
-              Centro Comunitario Santa Fe. Aquí creamos un espacio en línea donde la comunidad se conecta con programas, eventos y oportunidades. Es un proyecto de FrontEnd
+              Centro Comunitario Santa Fe. Aquí creamos un espacio en línea donde la comunidad se conecta con programas,
+              eventos y oportunidades. Es un proyecto de FrontEnd
               hecho con CSS y HTML</p>
+              <div
+              class=" d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none m-4">
+              <div class="col-md-3"> <a href="https://adonisb1219.github.io/CCSF/"><img class="icono"
+                    src="./src/img/web.png" alt="linkedin"></a></div>
+              <div > <a href="https://github.com/AdonisB1219/CCSF"><img class="icono" src="./src/img/github.png"
+                    alt="github"></a>
+              </div>
+          </div>
           </div>
 
           <div class="col mb-4 texto-final-p">
+            <row>
             <p class="proyectos-p">
-              ¡Descubre Pawsitive Vibes! Una experiencia amor, cuidado y positividad para sus usuarios. Elaborado con HTML, CSS, Bootstrap, Javascript, Java, SQL y Spring</p>
+              ¡Descubre Pawsitive Vibes! Una experiencia amor, cuidado y positividad para sus usuarios. Elaborado con
+              HTML, CSS, Bootstrap, Javascript, Java, SQL y Spring</p>
+            </row>
+            <div
+            class=" d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none m-4">
+            <div class="col-md-3"> <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><img class="icono"
+                  src="./src/img/web.png" alt="linkedin"></a></div>
+            <div > <a href="https://github.com/AdonisB1219"><img class="icono" src="./src/img/github.png"
+                  alt="github"></a>
+            </div>
+          </div>
+            
+
           </div>
           <div class="col mb-4">
-            <img class="img-proyectos derecha" src="./src/img/PawsitiveVibes.jpg" alt="Centro comunitario santa fe" id="img2">
+            <img class="img-proyectos derecha" src="./src/img/PawsitiveVibes.jpg" alt="Centro comunitario santa fe"
+              id="img2">
           </div>
         </div>
 
@@ -186,23 +210,13 @@
           </div>
         </div>
         <div class="col">
-          <div class="blandas">
+          <div class="palabras">
+
             <ul>
-              <li>
-                <p>Trabajo en equipo</p>
-              </li>
-              <li>
-                <p>Liderazgo</p>
-              </li>
-              <li>
-                <p>Creatividad</p>
-              </li>
-              <li>
-                <p>Adaptabilidad</p>
-              </li>
-              <li>
-                <p>Iniciativa</p>
-              </li>
+              <li>Orientación al detalle</li>
+              <li>Resolución de problemas</li>
+              <li>Creatividad</li>
+              <li>Curiosidad</li>
             </ul>
 
           </div>
@@ -220,7 +234,7 @@
       <div class="subrayado-titulo"></div>
 
       <div class="flex-contacto mt-4">
-        <div class="col-lg-6 col-12 cont-info">
+        <div class="col-lg-6 col-md-12 cont-info">
           <table class="info-contacto">
             <tr>
               <td>
@@ -240,8 +254,8 @@
             </tr>
             <tr>
               <td>
-                <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><img class="i-contacto" src="./src/img/linkedin.png"
-                    alt="linkedin"></a>
+                <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><img class="i-contacto"
+                    src="./src/img/linkedin.png" alt="linkedin"></a>
               </td>
               <td>
                 <a href="https://www.linkedin.com/in/adonis-becerra-morales-/">
@@ -252,7 +266,8 @@
             </tr>
             <tr>
               <td>
-                <a href="https://github.com/AdonisB1219"><img class="i-contacto" src="./src/img/github.png" alt="github"></a>
+                <a href="https://github.com/AdonisB1219"><img class="i-contacto" src="./src/img/github.png"
+                    alt="github"></a>
               </td>
               <td>
                 <a href="https://github.com/AdonisB1219">
@@ -265,7 +280,7 @@
 
         </div>
         <form id="form">
-          <div class="formulario-contacto col-lg-6">
+          <div class="formulario-contacto col-lg-6 col-md-12">
             <div class="col">
               <div class="form-floating mb-3 field">
                 <input type="text" class="form-control" id="name" placeholder="Nombre" name="name">
@@ -279,7 +294,8 @@
               </div>
               <div class="col">
                 <div class="form-floating mb-3 field">
-                  <textarea type="textarea" class="form-control" id="message" placeholder="Mensaje" name="message"></textarea>
+                  <textarea type="textarea" class="form-control" id="message" placeholder="Mensaje"
+                    name="message"></textarea>
                   <label for="message">Mensaje</label>
                   <input type="submit" id="button-email" value="Enviar Email">
                 </div>
