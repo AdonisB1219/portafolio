@@ -217,6 +217,7 @@ margin-bottom: 20px;
 
 .proyectos-p{
   width: 90%;
+  font-size: 17px;
 }
 
 p.proyectos-p{
@@ -365,6 +366,20 @@ p.proyectos-p{
       font-size: 14px;
     }
 
+    .icono{
+      height: 40px;
+      width: auto;
+      margin: 0px 15px;
+    }
+
+    .img-proyectos{
+      margin-left: 0;
+    }
+
+    #proyectos-div{
+      align-items: center;
+    }
+
 
     
     td > a > p{
@@ -376,10 +391,6 @@ p.proyectos-p{
     .i-contacto{
       height: 20px;
       width: auto;
-    }
-
-    .img-proyectos{
-      margin-left:30px;
     }
 
 
