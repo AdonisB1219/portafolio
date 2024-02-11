@@ -3,11 +3,19 @@ const nombre = document.getElementById('name');
 const correo = document.getElementById('email');
 const mensaje = document.getElementById('message');
 const inputs = [nombre, correo, mensaje];
+const footerText = document.getElementById('footer-text');
+const footerIcons = document.getElementById('footer-icons');
+const footerArrow = document.getElementById('footer-arrow');
+
 
 const regexNombre = /^[a-zA-Z\s+]{5,}$/;
 const regexCorreo = /^[^@\t\n\r]{5,}@[^@\t\n\r]{3,}.[^@\t\n\r]{2,}/;
 
-
+if (screen.width < 700){
+  footerText.classList.add('order-3');
+  footerIcons.add('order-1');
+  footerArrow.add('order-2');
+}
 
 //Enviar datos de contacto
 document.getElementById('form')
