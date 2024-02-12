@@ -39,6 +39,11 @@
               <a class="nav-link" id="contacto-nav" href="#contacto">Contacto</a>
             </li>
           </ul>
+          <div id="toggler-body">
+          <div id="toggle">
+            <i class="indicator"></i>
+          </div>
+        </div>
           <div class="text-end px-4">
             <a id="descargar-cv" href="https://drive.google.com/uc?export=download&id=1Na1CWz3UJaHAtkRjaDjxBUWJq1JYxms8"
               download="CV_Adonis.pdf">Descargar CV</a>
@@ -64,8 +69,7 @@
             </div>
             <div class="col-lg-6">
               <p class="fade">Soy desarrollador Java y también ingeniero industrial. Me apasiona la tecnología y
-                las metodologías ágiles. Estoy entusiasmado por conseguir una posición de desarrollador Java Jr para
-                aplicar mis conocimientos y seguir aprendiendo de la industria.</p>
+                las metodologías ágiles. Tengo experiencia en el desarrollo de sitios web, tanto front-end como back-end, usando múltiples tecnologías, lenguajes y frameworks, logrando así proyectos a la medida.</p>
             </div>
           </div>
         </div>
@@ -85,10 +89,8 @@
             <div class="project-buttons">
 
           <div class=" d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none m-4">
-            <div class="col-md-3"> <a href="https://pawsitive-vibes.onrender.com/"><img class="icono"
-                  src="./src/img/web.png" alt="linkedin"></a></div>
-            <div> <a href="https://github.com/Carramoz/PawsitiveVibesDeploy"><img class="icono"
-                  src="./src/img/github.png" alt="github"></a>
+            <div class="col-md-3"> <a href="https://pawsitive-vibes.onrender.com/"><i class="fa-solid fa-globe project-link"></i></a></div>
+            <div> <a href="https://github.com/Carramoz/PawsitiveVibesDeploy"><i class="fa-brands fa-github project-link"></i></a>
             </div>
           </div>
           <button class="tech-stack"><i class="fa-brands fa-java tech-icon"></i>Java</button>
@@ -108,7 +110,7 @@
         </div>
 
         <div class="div-proy" id="div-img2">
-          <a href="https://adonisb1219.github.io/PawsitiveVibesDeploy/"><img class="img-proyectos izquierda" src="./src/img/projects/seguimiento-citas.PNG"
+          <a href="https://seguimiento-citas-front.onrender.com/"><img class="img-proyectos izquierda" src="./src/img/projects/seguimiento-citas.PNG"
               alt="Todo-List" id="img1"></a>
         </div>
 
@@ -118,10 +120,8 @@
           <p class="proyectos-p">
             Gestiona los pacientes que das de alta en tu veterinaria. Proyecto realizado con Lit-element, Javascript, MongoDB, Java y Spring</p>
           <div class=" d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none m-4">
-            <div class="col-md-3"> <a href="https://seguimiento-citas-front.onrender.com/"><img class="icono"
-                  src="./src/img/web.png" alt="sitio web"></a></div>
-            <div> <a href="https://github.com/AdonisB1219/seguimiento-pacientes-Lit"><img class="icono" src="./src/img/github.png"
-                  alt="github"></a>
+            <div class="col-md-3"> <a href="https://seguimiento-citas-front.onrender.com/"><i class="fa-solid fa-globe project-link"></i></a></div>
+            <div> <a href="https://github.com/AdonisB1219/seguimiento-pacientes-Lit"><i class="fa-brands fa-github project-link"></i></a>
             </div>
           </div>
           <button class="tech-stack"><i class="fa-solid fa-code tech-icon"></i>Lit-element</button>
@@ -170,7 +170,7 @@
           <table class="info-contacto">
             <tr>
               <td>
-                <img class="i-contacto" src="./src/img/telefono.png" alt="telefono">
+                <i class="fa-solid fa-phone i-contacto"></i>
               </td>
               <td>
                 <p>+52 55 1070 1213</p>
@@ -178,7 +178,7 @@
             </tr>
             <tr>
               <td>
-                <img class="i-contacto" src="./src/img/mail.png" alt="correo">
+                <i class="fa-solid fa-envelope i-contacto"></i>
               </td>
               <td>
                 <p id="correo">adonisbecerra1219@gmail.com</p>
@@ -186,24 +186,22 @@
             </tr>
             <tr>
               <td>
-                <a href="https://www.linkedin.com/in/adonis-becerra-morales-/"><img class="i-contacto"
-                    src="./src/img/linkedin.png" alt="linkedin"></a>
+                <a href="https://www.linkedin.com/in/adonis-becerra-morales-/" class="i-contacto"><i class="fa-brands fa-linkedin i-contacto"></i></a>
               </td>
               <td>
                 <a href="https://www.linkedin.com/in/adonis-becerra-morales-/">
-                  <p>Adonis Becerra Morales</p>
+                  <p class="p-contacto">Adonis Becerra Morales</p>
                 </a>
 
               </td>
             </tr>
             <tr>
               <td>
-                <a href="https://github.com/AdonisB1219"><img class="i-contacto" src="./src/img/github.png"
-                    alt="github"></a>
+                <a href="https://github.com/AdonisB1219" class="i-contacto"><i class="fa-brands fa-github i-contacto"></i></a>
               </td>
               <td>
                 <a href="https://github.com/AdonisB1219">
-                  <p>AdonisB1219</p>
+                  <p class="p-contacto">AdonisB1219</p>
                 </a>
 
               </td>
@@ -238,6 +236,7 @@
       </div>
 
     </section>
+
   </main>
   <footer class="footer">
     <div class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top ">
