@@ -166,3 +166,65 @@ const observador = new IntersectionObserver(cargarImagen, {
 
 observador.observe(img1);
 observador.observe(img2);
+
+//Más proyectos
+const btnProyectos = document.getElementById('btn-proyectos');
+const p2 = document.getElementById('p2');
+
+btnProyectos.addEventListener('click', () => {
+  p2.insertAdjacentHTML('afterend', `        <div class="div-proy" id="p3">
+  <h3>Todo List</h3>
+  <p class="proyectos-p">
+    Gestiona tus tiempos con esta aplicación. Registra tus actividades pendientes y observa tu progreso diario.</p>
+    <div class="project-buttons">
+
+  <div class=" d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none m-4">
+    <div class="col-md-3"> <a href="https://pinkytodolist-0rnn.onrender.com/"><img class="icono"
+          src="./src/img/web.png" alt="web site"></a></div>
+    <div> <a href="https://github.com/AdonisB1219/to-do-list"><img class="icono"
+          src="./src/img/github.png" alt="github"></a>
+    </div>
+  </div>
+  <button class="tech-stack"><i class="fa-solid fa-code tech-icon"></i>EJS templates</button>
+  <button class="tech-stack"><i class="fa-brands fa-node tech-icon"></i>ExpressJS</button>
+  <button class="tech-stack"><i class="fa-brands fa-js tech-icon"></i>Javscript</button>
+  </div>
+</div>
+
+<div class="div-proy" id="div-img3">
+  <a href="https://pinkytodolist-0rnn.onrender.com/"><img class="img-proyectos derecha"
+      src="./src/img/projects/todo-list.PNG" alt="Todo list" id="img3"></a>
+</div>
+
+<div class="div-proy" id="div-img4">
+  <a href="https://adonisb1219.github.io/CCSF/"><img class="img-proyectos izquierda" src="./src/img/projects/CCSF.jpg"
+      alt="Centro comunitario santa fe" id="img4"></a>
+</div>
+
+<div class="div-proy" id="p4">
+  <h3>Centro comunitario</h3>
+
+  <p class="proyectos-p">
+    Centro Comunitario Santa Fe. Aquí creamos un espacio en línea donde la comunidad se conecta con programas,
+    eventos y oportunidades. Es un proyecto de FrontEnd
+    hecho con CSS y HTML.</p>
+  <div class=" d-flex align-items-center justify-content-center link-body-emphasis text-decoration-none m-4">
+    <div class="col-md-3"> <a href="https://adonisb1219.github.io/CCSF/"><img class="icono"
+          src="./src/img/web.png" alt="linkedin"></a></div>
+    <div> <a href="https://github.com/AdonisB1219/CCSF"><img class="icono" src="./src/img/github.png"
+          alt="github"></a>
+    </div>
+  </div>
+  <button class="tech-stack"><i class="fa-brands fa-html5 tech-icon"></i>HTML</button>
+  <button class="tech-stack"><i class="fa-brands fa-css3-alt tech-icon"></i>CSS</button>
+
+
+
+</div>`);
+btnProyectos.classList.add('hidden');
+const img3 = document.getElementById("img3");
+const img4 = document.getElementById("img4");
+observador.observe(img3);
+observador.observe(img4);
+})
+
