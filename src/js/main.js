@@ -13,8 +13,8 @@ const regexCorreo = /^[^@\t\n\r]{5,}@[^@\t\n\r]{3,}.[^@\t\n\r]{2,}/;
 
 if (screen.width < 700){
   footerText.classList.add('order-3');
-  footerIcons.add('order-1');
-  footerArrow.add('order-2');
+  footerIcons.classList.add('order-1');
+  footerArrow.classList.add('order-2');
 }
 
 //Enviar datos de contacto
